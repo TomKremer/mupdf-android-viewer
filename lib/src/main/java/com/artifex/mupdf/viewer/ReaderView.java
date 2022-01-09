@@ -539,6 +539,7 @@ public class ReaderView
 		if ((event.getAction() & MotionEvent.ACTION_MASK) == MotionEvent.ACTION_DOWN) {
 			mUserInteracting = true;
 		}
+
 		if ((event.getAction() & MotionEvent.ACTION_MASK) == MotionEvent.ACTION_UP) {
 			mUserInteracting = false;
 
@@ -918,13 +919,13 @@ public class ReaderView
 					setDisplayedViewIndex(page);
 				}
 			} else if (e.getX() < tapPageMargin) {
-				smartMoveBackwards();
+				//smartMoveBackwards();
 			} else if (e.getX() > super.getWidth() - tapPageMargin) {
-				smartMoveForwards();
+				//smartMoveForwards();
 			} else if (e.getY() < tapPageMargin) {
-				smartMoveBackwards();
+				//smartMoveBackwards();
 			} else if (e.getY() > super.getHeight() - tapPageMargin) {
-				smartMoveForwards();
+				//smartMoveForwards();
 			} else {
 				onTapMainDocArea();
 			}
